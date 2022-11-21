@@ -1,6 +1,12 @@
 voxelmetaverse: playing with [voxel.js](https://github.com/voxel)
 =========
 
+### build
+```
+yarn setup
+yarn start
+```
+
 [![browser support](https://ci.testling.com/voxel/voxelmetaverse.png)
 ](https://ci.testling.com/voxel/voxelmetaverse)
 
