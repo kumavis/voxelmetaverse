@@ -1,0 +1,13 @@
+diff --git a/node_modules/voxel-harvest/harvest.js b/node_modules/voxel-harvest/harvest.js
+index ae0e097..c85b42d 100644
+--- a/node_modules/voxel-harvest/harvest.js
++++ b/node_modules/voxel-harvest/harvest.js
+@@ -112,7 +112,7 @@ class Harvest extends EventEmitter {
+ 
+   block2ItemPile(blockName, heldTool) {
+     let item = this.registry.getProp(blockName, 'itemDrop');
+-    if (item == null) {
++    if (item === null) {
+       // special case, null = no drops
+       return undefined;
+     }

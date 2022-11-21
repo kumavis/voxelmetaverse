@@ -68,9 +68,12 @@
   "devDependencies": {
     "beefy": "^2.1.6",
     "browserify": "^13.0.1",
+    "glob": "^8.0.3",
+    "patch-package": "^6.5.0",
     "watchify": "^3.7.0"
   },
   "scripts": {
+    "setup": "yarn install --ignore-engines && yarn patch-package",
     "start": "beefy index.js:bundle.js --watchify --port 8080 -- --debug"
   }
 }
